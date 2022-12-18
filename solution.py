@@ -19,6 +19,7 @@ class Futoshiki:
                     if inequalities[row][column] != "0":
                         restrictions[(row, column, column + 1)] = inequalities[row][column]
                         # this holds the location of the inequality and the inequality symbol
+        return restrictions
     
     def enumerate_cells(self, numbers):
         # an inefficient but complete method to figure out the possible values for each cell.
